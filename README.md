@@ -1,24 +1,5 @@
-# README
+# Members Only
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple "Members Only" app as laid out in [*The Odin Project*](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Members of the app can write embarassing posts about non-members. Th members can see who wrote the post, but the non-members can only see the story.
