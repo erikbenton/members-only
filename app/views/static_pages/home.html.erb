@@ -1,0 +1,17 @@
+<div class="center jumbotron">
+	<% if current_user %>
+		<h1>Welcome to the Members Club, <%= current_user.name %></h1>
+	<% else %>
+		<h1>Welcome to the Members Club</h1>
+	<% end %>
+
+	<h2>
+		This is the home page for the "Members Only" app
+	</h2>
+	<% if !logged_in? %>
+		<%= link_to "Log in now!", login_path, class: "btn btn-lg btn-primary" %>
+	<% end %>
+</div>
+
+<%#= link_to image_tag("rails.png", alt: "Rails Logo"), 'http::/wwww.rubyonrails.org/' %>
+<%#= link_to image_tag("kitten.jpg", alt: "Kitten image") %>
