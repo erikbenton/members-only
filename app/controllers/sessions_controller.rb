@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
   		log_in @user
   		remember(@user)
   		flash[:success] = "You have successfully logged in"
-  		redirect_to root_path
+  		redirect_to root_url
   	else
   		flash[:danger] = "Invalid email and/or password"
   		render "new"
@@ -17,5 +17,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+  	log_out if logged_in?
+  	redirect_to root_url
   end
 end
